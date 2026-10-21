@@ -1,0 +1,17 @@
+<hr>
+
+<h3>Registros compartidos</h3>
+
+<ul>
+  @for (registro of registros; track $index) {
+    <li>{{ registro }}</li>
+  }
+</ul>
+
+<button class="btn btn-success me-2" (click)="agregarRegistro()">
+  Agregar registro
+</button>
+
+<button class="btn btn-warning" (click)="modificarRegistro()">
+  Modificar primer registro
+</button>
